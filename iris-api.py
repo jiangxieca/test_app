@@ -37,6 +37,6 @@ def iris_classifier(petal_length: float = Query(description="Petal Length",
 
 if __name__ == "__main__":
     uvicorn.run("iris-api:app",
-                host="0.0.0.0",
+                host="https://iris-api-37i8.onrender.com",
                 port=8000,
                 reload=True)
