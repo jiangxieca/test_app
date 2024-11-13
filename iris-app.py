@@ -12,7 +12,7 @@ def main():
         classify = st.button("Classify")
 
     if classify:
-        url=f"http://127.0.0.1:8000/iris?petal_length={petal_length}&petal_width={petal_width}&sepal_length={sepal_length}&sepal_width={sepal_width}"
+        url=f"https://iris-api-37i8.onrender.com/iris?petal_length={petal_length}&petal_width={petal_width}&sepal_length={sepal_length}&sepal_width={sepal_width}"
 
         response = requests.get(url)
         if response.status_code == 200:
